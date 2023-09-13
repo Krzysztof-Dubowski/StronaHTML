@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 50;
+}
+.logo {
+    width: 8rem;
+    margin-top: 2rem;
+    border-radius: 50%;
+    z-index: 4;
+    position: fixed;
+}
+.background {
+    width: 100%;
+    height: 550%;
+    position: absolute;
+    background-color: black ;
+    background-size: cover;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 2em;
+    position: relative;
+}
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    position: fixed;
+    margin-left: 10%;
+    margin-right: -10%;
+    width: 80%;
+    justify-content: space-around;
+    z-index: 3;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    padding: .2rem;
+}
+.menu  li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: white;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+.menu-items li a:hover::after {
+    width:100%;
+}
+.burger {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.line {
+width: 3em;
+height: .3em;
+background: white;
+margin: 0.6rem;
+border-radius: 20px;
+transition: .3s ease-in-out;
+}
+.ramka {
+    width: 80%;
+    top:12rem ;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+}
+
+.img {
+    position: relative;
+    height: 20rem;
+    width: auto;
+    left: 0%;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 5px gold
+}
+.text {
+    position: relative;
+    display: flex;
+    height: 20rem;
+    width: 20rem;
+    color: white;
+    display: flex;
+    top: 5rem;
+    right: 30%;
+}
+.sekcja-usługi {
+    position: relative;
+    align-items: center;
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    top: 20rem;
+    overflow: hidden;
+}
+.logo-usługi {
+    position: relative;
+    width: auto;
+    height: 20rem;
+    align-items: center;
+    margin: 0 auto;
+}
+.opis-wrapper {
+    overflow: hidden;
+    position: relative;
+    top: 20rem;
+    width: 100%;
+    }
+    .opis-container {
+        border: 1px solid yellow;
+        background-color: gold;
+        padding: 10px;
+        position: relative;
+        cursor: pointer;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .opis-container h2 {
+        margin: 15px;
+    }
+    .opis {
+        max-height: 0;
+        overflow: hidden;
+        background-color: gold;
+        transition: max-height 0.5s ease;
+        margin: 15px;
+
+    }
+    .opis-container ul {
+        margin: 10px;
+    }
+
+    .opis-container li {
+        margin-bottom: 10px;
+        color: BLACK;
+        margin: 15px;;
+        
+    }
+    .down {
+        width: 10px;
+        height: 10px;
+        transition: 0.5s transform;
+        float: right;
+        box-shadow: -2px 2px 0;
+        color: black;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .down.active {
+        transform: rotate(135deg);
+    }
+.sekcja-kadra {
+    position: relative;
+    align-items: center;
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    top: 20rem;
+    overflow: hidden;
+}
+.logo-kadra {
+    position: relative;
+    width: auto;
+    height: 20rem;
+    align-items: center;
+    margin: 0 auto;
+}
+.kadra-wrapper {
+    width: 80%;
+    top:20rem ;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+}
+.img2 {
+    position: relative;
+    height: 20rem;
+    width: auto;
+    left: 0%;
+
+
+}
+.text {
+    position: relative;
+    display: flex;
+    height: 20rem;
+    width: 20rem;
+    color: white;
+    display: flex;
+    top: 5rem;
+    right: 30%;
+}
+.sekcja-kontakt {
+    position: relative;
+    align-items: center;
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    top: 22rem;
+    overflow: hidden;
+}
+.logo-kontakt {
+    position: relative;
+    width: auto;
+    height: 20rem;
+    align-items: center;
+    margin: 0 auto;
+}
+.kontakt-wrapper {
+    width: 100%;
+    top: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    position: relative;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    height: 25vh; 
+  }
+  
+  .adres,
+  .godziny,
+  .telefon,
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto;
+    border: 2px solid gold;
+    padding: 10px;
+    color: white;
+    height: 100%; 
+    width: 25%;
+  }
+  
+  .adres-pic {
+    position: relative;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  
+  .text-kontak {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .regulamin {
+    top: 40rem;
+    border: 1px solid yellow;
+    background-color: rgb(255,215,0);
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .sekcja-regulamin {
+    position: relative;
+    align-items: center;
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    top: 26rem;
+    overflow: hidden;
+}
+.logo-regulamin {
+    position: relative;
+    width: auto;
+    height: 20rem;
+    align-items: center;
+    margin: 0 auto;
+}
+  .regulamin-wrapper {
+    position: relative;
+    top: 30rem;
+  }
+
+  
+  
+@media screen and (max-width:1200px) {
+   .menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        position: relative;
+        padding: 0.1rem;
+    }
+    .text {
+        right: 10%;
+    }
+
+    .adres,
+    .godziny,
+    .telefon,
+    .social {
+        width: 100%;
+
+}
+}
+@media screen and (max-width:900px) {
+    .ramka {
+        flex-direction: column;
+        top: 10vh;
+    }
+    .burger {
+        position: fixed;
+        display: block;
+        transition: 0.3 ease-in-out;
+        right: 20px;
+        z-index: 10;
+        
+    }
+    .menu ul {
+        position: absolute;
+        top: 8vh;
+        height: 92vh;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        transform: translateY(-110%);
+        transition: 0.5s ease-in-out;
+        background-color: black;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .menu ul.active {
+        position: absolute;
+        transform: translateY(0%);
+        transition: 0.5s ease-in-out;
+    }
+    .menu a {
+        color: white;
+        font-size: 2.5rem;
+        letter-spacing: 2px;;
+        margin-right: 20%;
+    }
+    .img {
+        top: 10vh;
+        height: 15rem;
+    }
+    .text {
+        top:10vh;
+        left: 2rem;
+    }
+    .sekcja-usługi {
+        top: 7rem;
+
+    }
+    .kadra-wrapper {
+        flex-direction: column;
+        top: 22rem;
+    }
+    .kontakt-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    .adres,
+    .godziny,
+    .telefon,
+    .social {
+        width: 100%;
+        align-items: left; 
+        justify-content: flex-start;  
+        align-items: flex-start; 
+}
+
+}
+@media only screen and (max-width: 760px) {
+   
+    .logo {
+        width: 5rem;
+    }
+    .menu ul {
+        width: 100%;
+        text-align: center;
+    }
+    .menu a {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem;
+        margin-right: 20%;
+    }
+    .ramka {
+        left: -5%;
+    }
+    .opis-container p {
+    margin: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 0.3rem;
+    color: black;
+    }
+}

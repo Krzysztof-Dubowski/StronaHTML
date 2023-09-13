@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+            background-color: black;
+        }
+
+        .logo-container img {
+            max-width: 500px;
+            animation: fadeInLogo 1s ease forwards;
+            border-radius: 50%;
+        }
+
+        .content-container {
+            display: none;
+        }
+
+        @keyframes fadeInLogo {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Animacja fade-in dla treści */
+        @keyframes fadeInContent {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Dodawanie animacji do .content-container po dodaniu klasy 'loaded' */
+        .loaded .content-container {
+            animation: fadeInContent 1s ease forwards;
+        }
+    </style>
+
+    <title>Logo Loading Effect</title>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo_kuby.jpg" alt="Logo">
+    </div>
+    <div class="content-container" id="content">
+        <!-- Treść strony -->
+        <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style — kopia.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="fixed-menu">
+    <nav class="menu">
+            <img class="logo" src="logo_kuby.JPG">
+
+            <ul class="menu_items">
+                <li><a class="menu_link" href="#strona-główna">STRONA GŁÓWNA</a></li>
+                <li><a class="menu_link" href="#usługi">USŁUGI</a></li>
+                <li><a class="menu_link" href="#kadra">KADRA</a></li>
+                <li><a class="menu_link" href="#kontakt">KONTAKT</a></li>
+                <li><a class="menu_link" href="#regulamin">REGULAMIN</a></li>
+            </ul>
+
+            <button class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+    </nav>
+    </div>
+    <div id="strona-główna" class="ramka">
+        <img class="img" src="zdjęcie_kuby.jpg" alt="zdjeciekubyXD">
+        <div class="text"> <p>Z wykształcenia jestem masażystą oraz aktualnie studiuję fizjoterapię. Moja pasja do terapii manualnej i rehabilitacji skłoniła mnie do poszerzania swojej wiedzy i umiejętności poprzez ukończenie różnych kursów. Przeszedłem szereg szkoleń, w tym z zakresu tapingu, masażu tkanek głębokich oraz kinesiotapingu i obecnie otwieram swoją działaność jako masażysta/terapeuta!</p></div>
+    </div>
+    <div id="usługi" class="sekcja-usługi">
+        <img class="logo-usługi" src="usługi.png" alt="usługi">
+    </div>
+    <div class="opis-wrapper">  
+        <div class="opis-container">
+            <h2>Bestseller</h2>
+            <div class="opis">
+                <li>Terapia indywidualna 60min -150 zł </li>
+                <li>Terapia indywidualna 90min -200zł</li>
+            </div>
+            <div class="down"></div>
+        </div>
+
+        <div class="opis-container">
+            <h2>masaż</h2>
+            <div class="opis">
+                <li>Terapia całego ciała -150zł</li>
+                <li>Masaż leczniczny kręgosłupa 60min -150zł </li>
+                <li>Masaż przeciw obrzękowy manualny -150zł </li>
+                <li>Mechaniczny drenaż limfatyczny -80zł</li>
+                <li>Masaż prenatalny:relaksacyjny masaż świecą -150zł</li>
+                </p>
+            </div>
+            <div class="down"></div>
+        </div>
+
+        <div class="opis-container">
+            <h2>oferta dla dwojga</h2>
+            <div class="opis">
+                <li>Masaż świecą </li>
+                <li>masaż armoatyczną oliwką</li>
+            </div>
+            <div class="down"></div>
+        </div>
+    </div>
+    <div id="kadra" class="sekcja-kadra">
+        <img class="logo-kadra" src="kadra.png" alt="kadra">
+    </div>
+    <div id="kadra" class="kadra-wrapper">
+        <img class="img2" src="zdjecie_kuby2.jpg" alt="zdjeciekuby2XD">
+        <div class="text"> <p>Z wykształcenia jestem masażystą oraz aktualnie studiuję fizjoterapię. Moja pasja do terapii manualnej i rehabilitacji skłoniła mnie do poszerzania swojej wiedzy i umiejętności poprzez ukończenie różnych kursów. Przeszedłem szereg szkoleń, w tym z zakresu tapingu, masażu tkanek głębokich oraz kinesiotapingu i obecnie otwieram swoją działaność jako masażysta/terapeuta!</p></div>
+    </div>
+    <div id="kontakt" class="sekcja-kontakt">
+        <img class="logo-kontakt" src="Kontakt.png" alt="kontakt">
+    </div>
+    <div id="kontakt" class="kontakt-wrapper">
+        <div class="adres">
+            <img class="adres-pic" src="domek.png">
+            <div class="text-kontakt">
+                <h2>adres:</h2>
+                <p> Ul.Słoneczna 17, 15-521 </li>Zaścianki</p></div>
+        </div>
+        <div class="godziny">
+            <img class="adres-pic" src="zegar.png">
+            <h2>godziny otwarcia:</h2>
+            <p>poniedziałek-piątek </li>10:00-22:00</p>
+        </div>
+        <div class="telefon">
+            <img class="adres-pic" src="telefon.png">
+            <h2>telefon:</h2>
+            <p>515 025 434</p>
+            <h2>email</h2>
+            <p>prezesbadura@gmail.com</p>
+        </div>
+        <div class="social"><a href="https://pl-pl.facebook.com/people/Jakub-O%C5%82dakowski/pfbid02z35GVNDTPkfX1tRSagww3Qq6Lz45BwtoheoTo38j4jh4D7DAKoMeoB6ii65rJLYbl/"> <img class="adres-pic" src="facebook.png"></a>
+            <a href="https://www.wp.pl/"><img class="adres-pic" src="instagram.png"></a>
+        </div>
+    </div>
+    <div id="regulamin" class="sekcja-regulamin">
+        <img class="logo-regulamin" src="Regulamin.png" alt="regulamin">
+    </div>
+
+    <div class="regulamin-wrapper">  
+        <div class="opis-container">
+            <h2>Regulamin korzystania z usług J.O.T:</h2>
+            <div class="opis">
+                <ul class="listy-opis">
+                    <li>Zapisanie się na zabieg jest równoznaczne z akceptacją poniższego regulaminu, a także oświadczeniem, iż nie istnieją żadne przeciwwskazania do wykonania zabiegu,</li>
+                    <li>J.O.T może odmówić wykonania zabiegu jeśli istnieją przeciwwskazania zdrowotne do jego wykonania, </li>
+                    <li>J.O.T może odmówić wykonania zabiegu, lub go przerwać, jeśli zachowanie klienta jest niestosowne, bądź obraźliwe,</li>
+                    <li>Godzina umówionej wizyty, to godzina rozpoczęcia zabiegu, dlatego prosimy o przybycie kilka minut wcześniej,</li>
+                    <li>W przypadku spóźnienia klienta, czas zabiegu zostaje skrócony o ilość minut równą spóźnieniu.</li>
+                </ul>
+                <div class="down"></div>
+            </div>
+            
+        </div>
+
+        <div class="opis-container">
+            <h2>Regulamin korzystania z voucherów podarunkowych:</h2>
+            <div class="opis">
+                <li>Zakup vouchera podarunkowego jest równoznaczny z akceptacją obowiązującego regulaminu,</li>
+                <li>Vouchery ważne są 3 miesiące. Po upływie tego czasu, voucher przepada, </li>
+                <li>Ważność vouchera można przedłużyć kontaktując się z nami telefonicznie w trakcie okresu jego ważności,</li>
+                <li>Zabiegi umówione w ramach voucherów, nie odwołane 24h wcześniej, przepadają,</li>
+                <li>Przed rozpoczęciem zabiegu należy okazać ważny voucher,</li>
+                <li>Z vouchera może skorzystać inna osoba,</li>
+                <li>Vouchera nie można wymienić na gotówkę, ani zakupić w jego ramach karnetu na zabiegi.</li>
+            </div>
+            <div class="down"></div>
+        </div>
+        </div>
+    </div>
+
+    <script src="skrypt.js"></script>
+</body>
+</html>
